@@ -40,7 +40,7 @@ if __name__ == '__main__':
 	lh_net1 = nib.load(lh_net1_path).get_fdata().flatten()
 	rh_net1 = nib.load(rh_net1_path).get_fdata().flatten()
 
-	pre_op_VTA_path_lh = '/path/to/your/DBSPatient/rh_Net_VTA_fcmap_group.mgh'
+	pre_op_VTA_path_lh = '/path/to/your/DBSPatient/lh_Net_VTA_fcmap_group.mgh'
 	pre_op_VTA_path_rh = '/path/to/your/DBSPatient/rh_Net_VTA_fcmap_group.mgh'
 
 	after_op_VTA_path_lh = '/path/to/your/DBSPatient_afterDBS/lh_Net_VTA_fcmap_group.mgh'
