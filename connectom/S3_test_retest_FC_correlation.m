@@ -54,6 +54,7 @@ for s = 1:length(subjects)
             retestMatrix(k, s) = CorrMat(i, j);
         end
     end
+    clear FC_matrix_retest FC_matrix_test
 end
 
 % Compute the average of test and retest matrices
