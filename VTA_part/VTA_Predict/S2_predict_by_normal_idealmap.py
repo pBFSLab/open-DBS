@@ -13,7 +13,7 @@ if __name__ == '__main__':
     df = pd.read_csv('/path/to/your/workspace/clinical_info/DBS_UPDRSIII_Pre_14.csv')
     print(df.head(), df.columns.tolist())
 
-    formula = 'change_rate_1m ~ patient_similarity + age + C(Sex_bin)'
+    formula = 'change_rate_1m ~ norm_similarity + age + C(Sex_bin)'
 
     # Perform leave-one-subject-out cross-validation
     n_patients = df['Subject'].nunique()
